@@ -28,7 +28,7 @@
            
         }
         
-        h1 {
+        .Happy {
             /* font-family: Arial, sans-serif; */
             text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
             text-align: center;
@@ -39,7 +39,17 @@
             margin-bottom: 30px;
             animation: rotate 9s infinite linear;
         }
-        
+        .Enjoy {
+            /* font-family: Arial, sans-serif; */
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+            text-align: center;
+            font-size: 100px;
+            font-display: auto;
+            font-style:italic;
+            color: #fcfc07e1;
+            margin-bottom: 30px;
+            animation: rotate 9s infinite linear;
+        }
         .photo-container {
             position: relative;
             width: 300px;
@@ -74,7 +84,7 @@
             top: 10%;
             left: 50%;
             transform: translateX(-50%);
-            animation: confetti 4s infinite ease-in-out;
+            animation: confetti 3.9s infinite ease-in-out;
         }
         
 
@@ -122,21 +132,28 @@
 <audio autoplay>
     <source src="youraudiofile.mp3" type="audio/mp3">
 </audio> -->
+    <!-- <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    
+    </script> -->
 
-
-    <iframe src="https://raw.github.com/SAMAKA7/Birthday-greet/blob/main/silence.mp3" allow="autoplay" id="audio" style="display: none">
+    <!-- <iframe src="song.mp3" allow="autoplay" id="audio" style="display: none">
         
-    </iframe> 
+    </iframe>  -->
+    
 
     <audio controls loop>  
-        <source src="https://raw.github.com/SAMAKA7/Birthday-greet/blob/main/song.mp3" type="audio/mpeg">
+        <source src="song.mp3" type="audio/mpeg">
     </audio>
   
     <!-- <embed type="audio/mpeg" src="song.mp3" autostart >
     </embed> -->
 
     <div class="container">
-        <h1>Happy Birthday !</h1>
+        <h1 class ="Happy">Happy Birthday !</h1>
+        <h2 class="Enjoy">Enjoy your day </h2>
         
         <div class="photo-container">
             <img class="photo" src="parul.jpeg" alt="Birthday Photo">
